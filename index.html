@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vitor Garcia | IFPR Paranavaí</title>
+		<meta
+			name="description"
+			content="Portfólio de Vitor Garcia do Instituto Federal do Paraná, Campus Paranavaí"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="logo">Engenharia de Software</div>
+				<nav class="desktop-nav">
+					<ul>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#habilidades">Habilidades</a></li>
+						<!-- <li><a href="#projetos">Projetos</a></li> -->
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+				<nav class="mobile-nav">
+					<ul>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#habilidades">Habilidades</a></li>
+						<!-- <li><a href="#projetos">Projetos</a></li> -->
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<h1>Olá, Mundo!</h1>
+					<p>Me chamo Vitor Garcia, e estudo no Instituto Federal do Paraná - Campus Paranavaí!</p>
+				</div>
+				<div class="hero-image">
+					<div class="profile-image">
+						<img src="./public/images/profile.png" alt="Perfil do Estudante" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sobre" class="about">
+			<div class="container">
+				<h2>Sobre Mim</h2>
+				<div class="about-content">
+					<div class="about-text">
+						<p>
+							Me formei em Tecnologia da Informação, pelo Colégio Estadual de Paranavaí, em seguida entrei no Instituto Federal para me especializar na área de desenvolvimento de sistemas.
+							Apaixonado por tecnologia e desenvolvimento de
+							software, busco constantemente aprender novas tecnologias e
+							aprimorar minhas habilidades.
+						</p>
+						<p>
+							Durante minha jornada acadêmica, tenho me dedicado a projetos
+							práticos que me permitem aplicar os conhecimentos teóricos
+							adquiridos em sala de aula. Acredito que a prática é fundamental
+							para o desenvolvimento profissional.
+						</p>
+						<div class="social-links">
+							<a 
+							href="https://www.linkedin.com/in/vitor-barbeiro-garcia/"
+							class="social-btn primary">
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+							<a 
+							href="https://github.com/vitorpsogarcia"
+							class="social-btn secondary">
+								<i class="fab fa-github"></i> GitHub
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="habilidades" class="skills">
+			<div class="container">
+				<h2>Minhas Habilidades</h2>
+				<div class="skills-grid">
+					<div class="skill-card">
+						<div class="skill-icon primary">
+							<i class="fas fa-laptop-code"></i>
+						</div>
+						<h3>Desenvolvimento Front-end</h3>
+						<p>HTML, CSS, JavaScript, React, Angular</p>
+					</div>
+
+					<div class="skill-card">
+						<div class="skill-icon secondary">
+							<i class="fas fa-server"></i>
+						</div>
+						<h3>Desenvolvimento Back-end</h3>
+						<p>Node.js, Express, Python, Java, Next</p>
+					</div>
+
+					<div class="skill-card">
+						<div class="skill-icon primary">
+							<i class="fas fa-database"></i>
+						</div>
+						<h3>Banco de Dados</h3>
+						<p>MySQL, PostgreSQL</p>
+					</div>
+
+					<div class="skill-card">
+						<div class="skill-icon secondary">
+							<i class="fas fa-mobile-alt"></i>
+						</div>
+						<h3>Desenvolvimento Mobile</h3>
+						<p>React Native, Flutter, Android (Java/Kotlin)</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section id="projetos" class="projects">
+			<div class="container">
+				<h2>Meus Projetos</h2>
+				<div class="projects-grid">
+					<div class="project-card">
+						<div class="project-image">
+							<img src="https://via.placeholder.com/400x200" alt="Projeto 1" />
+						</div>
+						<div class="project-content">
+							<h3>Sistema de Gestão Acadêmica</h3>
+							<p>
+								Desenvolvimento de um sistema para gerenciamento de atividades
+								acadêmicas, incluindo controle de notas, frequência e materiais
+								didáticos.
+							</p>
+							<div class="project-tags">
+								<span class="tag primary">React</span>
+								<span class="tag secondary">Node.js</span>
+								<span class="tag primary">MongoDB</span>
+							</div>
+							<a href="#" class="project-link">Ver projeto →</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-image">
+							<img src="https://via.placeholder.com/400x200" alt="Projeto 2" />
+						</div>
+						<div class="project-content">
+							<h3>Aplicativo de Monitoramento Ambiental</h3>
+							<p>
+								Aplicativo mobile para coleta e análise de dados ambientais, com
+								integração a sensores IoT e visualização em tempo real.
+							</p>
+							<div class="project-tags">
+								<span class="tag primary">Flutter</span>
+								<span class="tag secondary">Firebase</span>
+								<span class="tag primary">IoT</span>
+							</div>
+							<a href="#" class="project-link">Ver projeto →</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-image">
+							<img src="https://via.placeholder.com/400x200" alt="Projeto 3" />
+						</div>
+						<div class="project-content">
+							<h3>E-commerce de Produtos Locais</h3>
+							<p>
+								Plataforma para conectar produtores locais a consumidores,
+								facilitando a comercialização de produtos regionais de
+								Paranavaí.
+							</p>
+							<div class="project-tags">
+								<span class="tag primary">Next.js</span>
+								<span class="tag secondary">Express</span>
+								<span class="tag primary">PostgreSQL</span>
+							</div>
+							<a href="#" class="project-link">Ver projeto →</a>
+						</div>
+					</div>
+				</div>
+				<div class="projects-btn">
+					<a href="#" class="btn primary">Ver todos os projetos</a>
+				</div>
+			</div>
+		</section> -->
+
+		<section id="contato" class="contact">
+				<div class="contact-info">
+					<!-- <div class="contact-item">
+						<div class="contact-icon secondary">
+							<i class="fas fa-phone"></i>
+						</div>
+						<h3>Telefone</h3>
+						<p>(44) 99999-9999</p>
+					</div> -->
+					<div class="contact-item">
+						<div class="contact-icon secondary">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<h3>Email</h3>
+						<p>20230006236@estudantes.ifpr.edu.br</p>
+					</div>
+					<div class="contact-item">
+						<div class="contact-icon secondary">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<h3>Localização</h3>
+						<p>IFPR - Campus Paranavaí, PR</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-info">
+						<p class="footer-title">Engenharia de Software</p>
+						<p class="footer-subtitle">
+							Instituto Federal do Paraná - Campus Paranavaí
+						</p>
+					</div>
+					<div class="footer-social">
+						<a
+							title="LinkedIn"
+							href="https://www.linkedin.com/in/vitor-barbeiro-garcia/"
+							class="footer-social-link"
+							><i class="fab fa-linkedin-in"></i
+						></a>
+						<a
+							title="GitHub"
+							href="https://github.com/vitorpsogarcia"
+							class="footer-social-link"
+							><i class="fab fa-github"></i
+						></a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>
+						&copy; <span id="current-year"></span> Vitor Garcia. Todos os direitos reservados.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
