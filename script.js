@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const menuBtn = document.querySelector(".mobile-menu-btn");
 	const mobileNav = document.querySelector(".mobile-nav");
+	const footerIp = document.querySelector(".footer-ip");
 
 	menuBtn.addEventListener("click", function () {
 		mobileNav.classList.toggle("active");
@@ -80,4 +81,20 @@ document.addEventListener("DOMContentLoaded", function () {
 			this.querySelector(".project-image img").style.transform = "scale(1)";
 		});
 	});
+
+	async function getUserIp() {
+		const response = await fetch("https://api.ipify.org?format=json");
+		if (response.ok) {
+			const data = await response.json();
+			updateUserIp(data.ip);
+		} else {
+			console.error("Error fetching IP address:", response.statusText);
+		}
+	}
+
+	function updateUserIp(ip) {
+		footerIp.textContent = `Seu IPv4: ${ip}`;
+	}
+
+	getUserIp();
 });
