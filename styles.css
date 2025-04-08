@@ -516,6 +516,12 @@ section {
 	font-size: 0.9rem;
 }
 
+.footer-ip {
+	color: #aaa;
+	font-size: 0.75rem;
+	margin-top: 10px;
+}
+
 .footer-social {
 	display: flex;
 	gap: 15px;
